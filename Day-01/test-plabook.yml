@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Ensure a package is installed
+      apt:
+        name: nginx
+        state: present
