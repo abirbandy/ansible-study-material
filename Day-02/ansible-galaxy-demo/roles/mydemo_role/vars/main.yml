@@ -1,0 +1,4 @@
+#SPDX-License-Identifier: MIT-0
+---
+# vars file for mydemo_role
+demo_file_content: "This file was created by Ansible with a custom role!"

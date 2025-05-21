@@ -1,0 +1,7 @@
+---
+- name: Run my custom demo role
+  hosts: localhost
+  become: true
+
+  roles:
+    - role: roles/mydemo_role

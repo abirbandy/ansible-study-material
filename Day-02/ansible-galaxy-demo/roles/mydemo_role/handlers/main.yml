@@ -1,0 +1,5 @@
+#SPDX-License-Identifier: MIT-0
+---
+# handlers file for mydemo_role
+- name: restart dummy service
+  ansible.builtin.command: touch /tmp/service_restarted

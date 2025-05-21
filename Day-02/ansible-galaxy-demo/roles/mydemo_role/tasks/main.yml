@@ -1,0 +1,9 @@
+#SPDX-License-Identifier: MIT-0
+---
+# tasks file for mydemo_role
+# This task just creates a file and writes a message into it
+- name: Create demo file with content
+  ansible.builtin.copy:
+    dest: "/tmp/{{ demo_file_name }}"
+    content: "{{ demo_file_content }}"
+  notify: restart dummy service
