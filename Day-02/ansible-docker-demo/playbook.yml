@@ -1,0 +1,17 @@
+- name: Deploy simple web app in Docker
+  hosts: localhost
+  tasks:
+    - name: Build Docker image
+      community.docker.docker_image:
+        name: mydemoapp
+        source: build
+        build:
+          path: .
+
+    - name: Run Docker container
+      community.docker.docker_container:
+        name: demo_container
+        image: mydemoapp
+        state: started
+        ports:
+          - "8080:80"
