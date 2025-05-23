@@ -86,3 +86,24 @@ of the infrastructure independently.
 ### Consistency
 Using roles ensures that the same setup and configuration procedures are applied uniformly across
 multiple environments, reducing the risk of configuration drift.
+
+## Commands to run the demo
+
+### Create a working directory
+
+mkdir ansible-galaxy-demo && cd ansible-galaxy-demo
+
+### Use ansible galaxy to create a role
+
+ansible-galaxy init mydemo_role
+
+
+### Add tasks and other files in role
+
+ansible-playbook site.yml
+
+### Validate the result
+
+cat /tmp/ansible_demo.txt
+
+ls -l /tmp/services_restarted
