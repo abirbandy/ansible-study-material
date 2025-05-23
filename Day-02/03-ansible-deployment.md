@@ -28,6 +28,7 @@ ansible-docker-demo/
 
 #### Install Python dependencies
 python3 -m pip install --upgrade pip
+
 pip install ansible docker
 
 #### Install Ansible collection
